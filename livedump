@@ -1,3 +1,3 @@
 # livedump
-# /omd/sites/\<sitename\>/etc/cron.d/livedump
+# /omd/sites/<sitename>/etc/cron.d/livedump
 */1 * * * * livedump > state; scp state <user>@<ip>:tmp/nagios/checkresults/caabbcc; scp caabbcc.ok <user>@<ip>:tmp/nagios/checkresults/caabbcc.ok
