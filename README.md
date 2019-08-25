@@ -11,3 +11,7 @@ cp multisite.mo /omd/sites/\<sitename\>/local/share/check_mk/locale/de/LC_MESSAG
 
 sudo docker exec -it \<containername\> mkdir -p /omd/sites/\<sitename\>/local/share/check_mk/locale/de/LC_MESSAGES
 sudo docker cp multisite.mo \<containername\>:/omd/sites/\<sitename\>/local/share/check_mk/locale/de/LC_MESSAGES
+
+## livedump treasures
+
+~/share/doc/check_mk/treasures/livedump
