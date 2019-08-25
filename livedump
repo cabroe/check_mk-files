@@ -4,10 +4,10 @@
 # OMD[slave1]:~$ livedump -TC > config.cfg
 # Wichtig: Falls Sie auch von einem zweiten Slave eine Konfiguration übertragen, so dürfen Sie die Option -T dort nicht verwenden!
 # OMD[slave1]:~$ scp config.cfg master@mymaster.mydomain:etc/nagios/conf.d/config-slave1.cfg
-# OMD[master]:~$ cmk -R
+# OMD[master]:~$ cmk -R (per ssh: ssh <user>@<server> -t "cmk -R")
 # OMD[slave1]:~$ livedump > state
 # OMD[slave1]:~$ scp state master@mymaster.mydomain:tmp/nagios/checkresults/caabbcc
-# OMD[master]:~$ touch tmp/nagios/checkresults/caabbcc.ok
+# OMD[master]:~$ touch tmp/nagios/checkresults/caabbcc.ok (per ssh: ssh <user>@<server> -t "touch tmp/nagios/checkresults/caabbcc.ok")
 # Nach Gruppe filtern
 # OMD[slave]:~$ livedump -H "Filter: host_groups >= mygroup" > state
 */1 * * * * livedump > state; scp state <user>@<ip>:tmp/nagios/checkresults/caabbcc; scp caabbcc.ok <user>@<ip>:tmp/nagios/checkresults/caabbcc.ok
