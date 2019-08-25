@@ -1,5 +1,7 @@
 # livedump
 # /omd/sites/<sitename>/etc/cron.d/livedump
+# cronscript aktivieren: 
+# OMD[slave1]:~$ omd reload crontab
 #
 # OMD[slave1]:~$ livedump -TC > config.cfg
 # Wichtig: Falls Sie auch von einem zweiten Slave eine Konfiguration übertragen, so dürfen Sie die Option -T dort nicht verwenden!
