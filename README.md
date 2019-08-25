@@ -5,4 +5,4 @@ wget --no-check-certificate --content-disposition https://github.com/cabroe/chec
 
 mkdir -p /omd/sites/\<sitename\>/local/share/check_mk/locale/de/LC_MESSAGES
   
-cp multisite.mo /omd/sites/"<sitename>"/local/share/check_mk/locale/de/LC_MESSAGES
+cp multisite.mo /omd/sites/\<sitename\>/local/share/check_mk/locale/de/LC_MESSAGES
