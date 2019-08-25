@@ -1,2 +1,2 @@
 # livedump
-*/1 * * * * livedump > state; scp state \<user>\@\<ip\>:tmp/nagios/checkresults/caabbcc; scp caabbcc.ok \<user>\@\<ip\>:tmp/nagios/checkresults/caabbcc.ok
+*/1 * * * * livedump > state; scp state <user>@<ip>:tmp/nagios/checkresults/caabbcc; scp caabbcc.ok <user>@<ip>:tmp/nagios/checkresults/caabbcc.ok
